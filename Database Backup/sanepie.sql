@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.3.11
+-- version 4.5.1
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2015 at 11:25 AM
--- Server version: 5.6.24
--- PHP Version: 5.6.8
+-- Generation Time: Nov 14, 2016 at 09:13 PM
+-- Server version: 10.1.10-MariaDB
+-- PHP Version: 7.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `sanepie`
@@ -26,19 +26,18 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin9108`
 --
 
-CREATE TABLE IF NOT EXISTS `admin9108` (
+CREATE TABLE `admin9108` (
   `name` varchar(100) NOT NULL,
   `username` varchar(150) NOT NULL,
   `password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin9108`
 --
 
 INSERT INTO `admin9108` (`name`, `username`, `password`) VALUES
-('Anant', 'anantgupta2015', 'hello'),
-('Rajat', 'rajatgupta99', 'hello1991');
+('Guest User', 'guest', 'guest2016');
 
 -- --------------------------------------------------------
 
@@ -46,7 +45,7 @@ INSERT INTO `admin9108` (`name`, `username`, `password`) VALUES
 -- Table structure for table `sanesearch1`
 --
 
-CREATE TABLE IF NOT EXISTS `sanesearch1` (
+CREATE TABLE `sanesearch1` (
   `name` varchar(200) DEFAULT NULL,
   `url` varchar(250) NOT NULL,
   `country` varchar(150) DEFAULT NULL,
@@ -63,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `sanesearch1` (
   `keyword10` varchar(1500) DEFAULT NULL,
   `keyword11` varchar(1500) DEFAULT NULL,
   `keyword12` varchar(1500) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `sanesearch1`
@@ -83,7 +82,7 @@ INSERT INTO `sanesearch1` (`name`, `url`, `country`, `city`, `keyword1`, `keywor
 ('Flipkart (India)', 'www.flipkart.com', 'India', '', 'online shopping buy sell electronics electronic laptop laptops mobile phone phones television', 'fridge books clothes pen drive drives hard disk ecommerce led lcd tvs', 'tv mobiles', '', '', '', '', '', '', '', '', ''),
 ('Google', 'www.google.com', '', '', 'search searching engine web fast cloud computing web analytics advertise advertising find', 'android', '', '', '', '', '', '', '', '', '', ''),
 ('Hao123 (China)', 'www.hao123.com', 'China', '', 'chinese online listing portal baidu', '', '', '', '', '', '', '', '', '', '', ''),
-('IMDb', 'www.imdb.com', '', '', 'movie movies review reviews feedback rating ratings trailers tv celebrities content', 'top coming soon charts popular genre film flims', '', '', '', '', '', '', '', '', '', ''),
+('IMDb', 'www.imdb.com', '', '', 'movie movies review reviews feedback rating ratings trailers tv celebrities content', 'top coming soon charts popular genre film films celebrity tvs upcoming', '', '', '', '', '', '', '', '', '', ''),
 ('Imgur', 'www.imgur.com', '', '', 'online image images share sharing enjoy awesome entertainment entertain viral upload add', 'submit community commenting comment voting', '', '', '', '', '', '', '', '', '', ''),
 ('Instagram', 'www.instagram.com', '', '', 'share moments moment few simple life picture pictures filter tag image images', 'capture video videos upload friend friends connect socialize uploading', '', '', '', '', '', '', '', '', '', ''),
 ('Linkedin', 'www.linkedin.com', '', '', 'professional network social networking jobs hire job connect find socialize connection add', '', '', '', '', '', '', '', '', '', '', ''),
@@ -109,7 +108,22 @@ INSERT INTO `sanesearch1` (`name`, `url`, `country`, `city`, `keyword1`, `keywor
 ('Yahoo! (Japan)', 'www.yahoo.co.jp', 'japan', '', 'japanese search searching engine news groups answers advertising online mapping fantasy sports', 'mail engine video news answer advertise finance sharing sports yahoo', '', '', '', '', '', '', '', '', '', ''),
 ('Yahoo!', 'www.yahoo.com', '', '', 'yahoo mail search searching engine video news answer advertise finance sharing sports', 'groups answers advertising online mapping fantasy sports', '', '', '', '', '', '', '', '', '', ''),
 ('Yandex (Russia)', 'www.yandex.ru', 'Russia', '', 'russian search engine searching web quick fast find answers answer direct mail', 'fotki browser maps news music video money catalog taxi yandex', '', '', '', '', '', '', '', '', '', ''),
-('Youtube', 'www.youtube.com', '', '', 'video sharing upload share watch trailer trailers songs movie tv shows movies', 'videos uploading movies online song top', '', '', '', '', '', '', '', '', '', '');
+('Youtube', 'www.youtube.com', '', '', 'video sharing upload share watch trailer trailers songs movie tv shows movies', 'videos uploading movies online song top', '', '', '', '', '', '', '', '', '', ''),
+('Shape Shifter (India)', 'www.shapeshifter.co.in', 'India', '', 'g buy supplements build fitness sports traininmuscle muscles transform fit loose fat', 'supplement health muscle', '', '', '', '', '', '', '', '', '', ''),
+('Coursera', 'www.coursera.org', '', '', 'study online education courses course free learn university universities programming business computer', 'science arts and humanities data science life sciences math and logic personal', 'development physical science engineering social sciences specialization specializations specialized', '', '', '', '', '', '', '', '', ''),
+('Snapdeal (India)', 'www.snapdeal.com/', 'India', '', 'online shopping buy sell mobile and tablets computer laptop laptops office games', 'game electronics electronic home kitchen women womens fashion mens men toy', 'toys kids baby products product books book novels novel sports health food', 'mobile television mobiles televisions ecommerce clothes', '', '', '', '', '', '', '', ''),
+('Westfield (United Kingdom)', 'uk.westfield.com/london', 'United Kingdom', 'London', 'shopping mall shops retailers retail shop buy', '', '', '', '', '', '', '', '', '', '', ''),
+('Le Bernardin (USA)', 'www.le-bernardin.com', 'USA', 'New York', 'food restaurant french eat dinning seafood restaurants', '', '', '', '', '', '', '', '', '', '', ''),
+('Blue Hill (USA)', 'www.bluehillfarm.com', 'USA', 'New York', 'dine restaurant eat food american restaurants', '', '', '', '', '', '', '', '', '', '', ''),
+('Eli Zabar (USA)', 'www.elizabar.com', 'USA', 'New York', 'bakery american deli eat breakfast restaurants', '', '', '', '', '', '', '', '', '', '', ''),
+('Print (USA)', 'www.printrestaurant.com', 'USA', 'New York', 'american restaurant eat food berkshire pork chops fresh fish star restaurants', '', '', '', '', '', '', '', '', '', '', ''),
+('Union Square Cafe (USA)', 'www.unionsquarecafe.com', 'USA', 'New York', 'restaurant cafe american eat food restaurants', '', '', '', '', '', '', '', '', '', '', ''),
+('Daniel (USA)', 'www.danielnyc.com', 'USA', 'New York', 'restaurant french eat food restaurants', '', '', '', '', '', '', '', '', '', '', ''),
+('Scarpetta (USA)', 'www.ldvhospitality.com/brands/scarpetta', 'USA', 'New York', 'restaurant italian food eat pasta pastas restaurants', '', '', '', '', '', '', '', '', '', '', ''),
+('Torrentz', 'www.torrentz.com', '', '', 'download torrent bittorrent bittorrentz', '', '', '', '', '', '', '', '', '', '', ''),
+('Netflix (USA)', 'www.netflix.com', 'USA', '', 'watch movie online movies buy stream tv shows show tvs streamed subscribe', 'subscription rent game games', '', '', '', '', '', '', '', '', '', ''),
+('Sound Cloud', 'www.soundcloud.com', '', '', 'music listen share upload listening sharing playlist free discover new track tracks', 'artist artists favorite connect with directly own trending community find', '', '', '', '', '', '', '', '', '', ''),
+('Krishna (India)', 'www.inoook.com', 'India', 'New Delhi', 'computer programmer ucsc extension student', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -117,7 +131,7 @@ INSERT INTO `sanesearch1` (`name`, `url`, `country`, `city`, `keyword1`, `keywor
 -- Table structure for table `userswebsites`
 --
 
-CREATE TABLE IF NOT EXISTS `userswebsites` (
+CREATE TABLE `userswebsites` (
   `websitename` varchar(150) NOT NULL,
   `url` varchar(150) NOT NULL,
   `categories` varchar(300) NOT NULL,
@@ -127,14 +141,7 @@ CREATE TABLE IF NOT EXISTS `userswebsites` (
   `userslinktoweb` varchar(250) NOT NULL,
   `date` varchar(100) NOT NULL,
   `time` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `userswebsites`
---
-
-INSERT INTO `userswebsites` (`websitename`, `url`, `categories`, `keywords`, `usersname`, `usersemail`, `userslinktoweb`, `date`, `time`) VALUES
-('SanePie', 'www.sanepie.com', 'Search Engine, Search', 'Fast, Search Engine, Button Less Searching', 'Rajat Gupta', 'rajatguptaa99@gmail.com', 'Founder &amp; CEO', '17 November, 2015', '11:42 am');
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
@@ -150,7 +157,8 @@ ALTER TABLE `admin9108`
 -- Indexes for table `sanesearch1`
 --
 ALTER TABLE `sanesearch1`
-  ADD PRIMARY KEY (`url`), ADD FULLTEXT KEY `name` (`name`,`url`,`country`,`city`,`keyword1`,`keyword2`,`keyword3`,`keyword4`,`keyword5`,`keyword6`,`keyword7`,`keyword8`,`keyword9`,`keyword10`,`keyword11`,`keyword12`);
+  ADD PRIMARY KEY (`url`);
+ALTER TABLE `sanesearch1` ADD FULLTEXT KEY `name` (`name`,`url`,`country`,`city`,`keyword1`,`keyword2`,`keyword3`,`keyword4`,`keyword5`,`keyword6`,`keyword7`,`keyword8`,`keyword9`,`keyword10`,`keyword11`,`keyword12`);
 
 --
 -- Indexes for table `userswebsites`
