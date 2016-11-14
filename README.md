@@ -29,9 +29,8 @@ To Edit -> $link=mysqli_connect("localhost","root","","sanepie")or die("Database
   
   Administrator account access details:
   
-  URL: Sanepie/admin9108
-  
-  Default Username: guest
-  Deafult Password: guest2016
+  1. URL: Sanepie/admin9108
+  2. Default Username: guest
+  3. Deafult Password: guest2016
   
 - SanePie is a responsive website, ready for viewing on mobile and portable devices.
