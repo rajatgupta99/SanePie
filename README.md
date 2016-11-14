@@ -3,7 +3,7 @@ Keywords Based Mini Domain Name Search Engine
 
 - You will need a LAMP stack to run the website on local environment.
 
-- Windows users can install XMAPP for running in the local enironment.
+- Windows users can install XAMPP for running in the local enironment.
 
 - XAMPP: 
 
