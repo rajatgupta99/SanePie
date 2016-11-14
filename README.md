@@ -15,6 +15,8 @@ Keywords Based Mini Domain Name Search Engine
 
 To Edit -> $link=mysqli_connect("localhost","root","","sanepie")or die("Database Not Connected");
 
+Edit to -> Your Mysql Username and Password
+
     a) index.php
     b) sanesearching.php
     c) addyourwebsite.php
