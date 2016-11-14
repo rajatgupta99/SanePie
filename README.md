@@ -20,3 +20,18 @@ To Edit -> $link=mysqli_connect("localhost","root","","sanepie")or die("Database
     c) addyourwebsite.php
     d) admin9108/index.php
     e) admin9108/adminaccount.php
+    
+- SanePie Administrator Account:
+
+  Administrator account gives you the permission to add more websites from the backend.
+  
+  Keywords could be associated along with the website's url for searching.
+  
+  Administrator account access details:
+  
+  URL: Sanepie/admin9108
+  
+  Default Username: guest
+  Deafult Password: guest2016
+  
+- SanePie is a responsive website, ready for viewing on mobile and portable devices.
