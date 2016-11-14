@@ -1,0 +1,549 @@
+@charset "utf-8";
+
+@-webkit-viewport{width: device-width;}
+@-moz-viewport{width: device-width;}
+@-ms-viewport{width: device-width;}
+@-o-viewport{width: device-width;}
+
+@font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot');
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff2') format('woff2'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff') format('woff'),
+         url('../fonts/latohairline/lato-hairline-webfont.ttf') format('truetype'),
+         url('../fonts/latohairline/lato-hairline-webfont.svg#latohairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-webkit-font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot');
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff2') format('woff2'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff') format('woff'),
+         url('../fonts/latohairline/lato-hairline-webfont.ttf') format('truetype'),
+         url('../fonts/latohairline/lato-hairline-webfont.svg#latohairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-moz-font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot');
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff2') format('woff2'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff') format('woff'),
+         url('../fonts/latohairline/lato-hairline-webfont.ttf') format('truetype'),
+         url('../fonts/latohairline/lato-hairline-webfont.svg#latohairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-ms-font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot');
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff2') format('woff2'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff') format('woff'),
+         url('../fonts/latohairline/lato-hairline-webfont.ttf') format('truetype'),
+         url('../fonts/latohairline/lato-hairline-webfont.svg#latohairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-o-font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot');
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff2') format('woff2'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff') format('woff'),
+         url('../fonts/latohairline/lato-hairline-webfont.ttf') format('truetype'),
+         url('../fonts/latohairline/lato-hairline-webfont.svg#latohairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot');
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensansregular/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-webkit-font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot');
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensansregular/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-moz-font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot');
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensansregular/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-ms-font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot');
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensansregular/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@-o-font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot');
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensansregular/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face{
+	 font-family: latohairline;
+	 src:url(../fonts/Lato-Hairline.ttf);}
+	 
+@-webkit-font-face{
+	 font-family: latohairline;
+	 src:url(../fonts/Lato-Hairline.ttf);}
+	 
+@-moz-font-face{
+	 font-family: latohairline;
+	 src:url(../fonts/Lato-Hairline.ttf);}
+	 
+@-ms-font-face{
+	 font-family: latohairline;
+	src:url(../fonts/Lato-Hairline.ttf);}
+	 
+@-o-font-face{
+	 font-family: latohairline;
+	 src:url(../fonts/Lato-Hairline.ttf);}*/
+
+/*@font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}	 
+	 
+@-webkit-font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}
+	 	 
+@-moz-font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}
+	 
+@-ms-font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}
+	 
+@-o-font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}*/
+
+
+*{ margin:0; 
+   padding:0;
+   -webkit-font-smoothing: antialiased;
+   -moz-font-smoothing: antialised;
+   -ms-font-smoothing: antialised;
+   -0-font-smoothing: antialised;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border:box;
+   -o-box-sizing: border-box;  
+   }
+
+.clr{clear:both;}
+
+.container {
+	width:100%;
+	margin: 0 auto;}
+	
+.container .columns{
+	float:left;}
+	
+.container .columns.one {width: 6.25%;}
+.container .columns.two {width: 12.5%;}
+.container .columns.three {width: 18.75%;}
+.container .columns.four {width: 25%;}
+.container .columns.five {width: 31.25%;}
+.container .columns.six {width: 37.5%;}
+.container .columns.seven {width: 43.75%;}
+.container .columns.eight {width: 50%;}
+.container .columns.nine {width: 56.25%;}
+.container .columns.ten {width: 62.5%;}
+.container .columns.eleven {width: 68.75%;}
+.container .columns.twelve {width: 75%;}
+.container .columns.thirteen {width: 81.25%;}
+.container .columns.fourteen {width: 87.5%;}
+.container .columns.fifteen {width: 93.75%;}
+.container .columns.sixteen {width: 100%;}
+
+.one-offset-left{margin-left:6.25%;}
+.two-offset-left{margin-left:12.5%;}
+.three-offset-left{margin-left:18.75%;}
+.four-offset-left{margin-left:25%;}
+.five-offset-left{margin-left:31.25%;}
+.six-offset-left{margin-left:37.5%;}
+.seven-offset-left{margin-left:43.75%;}
+.eight-offset-left{margin-left:50%;}
+.nine-offset-left{margin-left:56.25%;}
+.ten-offset-left{margin-left:62.5%;}
+.eleven-offset-left{margin-left:68.75%;}
+.twelve-offset-left{margin-left:75%;}
+.thirteen-offset-left{margin-left:81.25%;}
+.fourteen-offset-left{margin-left:87.5%;}
+.fifteen-offset-left{margin-left:93.75%;}
+.sixteen-offset-left{margin-left:100%;}
+
+.one-offset-right{margin-right:6.25%;}
+.two-offset-right{margin-right:12.5%;}
+.three-offset-right{margin-right:18.75%;}
+.four-offset-right{margin-right:25%;}
+.five-offset-right{margin-right:31.25%;}
+.six-offset-right{margin-right:37.5%;}
+.seven-offset-right{margin-right:43.75%;}
+.eight-offset-right{margin-right:50%;}
+.nine-offset-right{margin-right:56.25%;}
+.ten-offset-right{margin-right:62.5%;}
+.eleven-offset-right{margin-right:68.75%;}
+.twelve-offset-right{margin-right:75%;}
+.thirteen-offset-right{margin-right:81.25%;}
+.fourteen-offset-right{margin-right:87.5%;}
+.fifteen-offset-right{margin-right:93.75%;}
+.sixteen-offset-right{margin-right:100%;}
+
+.clearfix:after,.container:after{
+content:'';
+display:block;
+overflow: hidden;
+visibility: hidden;
+width:0;
+height:0;
+clear:both;}
+
+.clearfix,.container{zoom:1;}
+
+a{text-decoration:none;color:inherit;}
+
+ul li{
+	display:inline;
+	list-style:none;}
+
+.backgrgheader{
+	background-color:#F38630;
+	box-shadow: 0.125em 0.125em 0.9375em #000; 
+	-webkit-box-shadow: 0.125em 0.125em 0.9375em #000; 
+	-moz-box-shadow: 0.125em 0.125em 0.9375em #000; 
+	-ms-box-shadow: 0.125em 0.125em 0.9375em #000; 
+	-o-box-shadow: 0.125em 0.125em 0.9375em #000; }
+	
+.logotxt{
+	color:#FFF;
+	padding:12px 8px 4px 15px;
+	font-size:40px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+-ms-text-shadow: 1px 1px 1px #000;
+-o-text-shadow: 1px 1px 1px #000;}
+
+.logotxtb{
+	 font-family: 'latohairline';
+	/*font-family: "latohairline" ,"Helvetica Neue", Helvetica, Arial, sans-serif;*/}
+	
+.logotxt2{
+	font-size:15px;
+	color:black;
+	text-shadow:none;}
+	
+.logoimg{
+	width:35px;
+	height:35px;}
+	
+.logout1{
+	padding:28px 3px 3px 35px;
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	color:white;}	
+	
+.logoutbutton{
+	height:23px;
+	width:90px;
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	border-style: solid;
+    border-width:1px;
+	border-color:#FFF;
+    background-color:#F38630;
+    color:#FFF;
+    font-weight:bold;
+    outline:none;
+	padding:1.2px 5px 5px 5px;
+	transition: all 0.3s ease-out 0s;}	
+	
+.logoutbutton:hover{
+	background-color: #F07818;
+	cursor:pointer;}	
+	
+.logoutbutton:focus{	
+   border-style:inset;
+   background: linear-gradient(to bottom, #F38630, #FA6900);
+	background: -webkit-linear-gradient(to top, #F38630, #FA6900);
+    background: -o-linear-gradient(to top, #F38630, #FA6900);
+    background: -moz-linear-gradient(to top, #F38630, #FA6900);}
+	
+.leftcontainer1{
+	
+	}		
+	
+.welcomingbar{
+	margin-top:30px;
+	padding:7px 10px 7px 20px;
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	color:#FFF;
+	font-size:15.5px;
+	font-weight:bold;
+	background-color:#000;
+	border-radius:3px;
+	width:70%;
+	border-style:solid;
+    border-width: 1px;
+	border-radius:2px;
+	border-color:#000;}
+	
+.welcomingbar2{
+	margin-top:5px;
+	padding:5px 10px 5px 20px;
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	color:#FFF;
+	font-size:15.5px;
+	font-weight:bold;
+	background-color:#000;
+	border-radius:3px;
+	width:70%;
+	border-style:solid;
+    border-width: 1px;
+	border-radius:2px;
+	border-color:#000;}	
+
+.userdet1{
+	color:#F38630;}	
+		
+.webinfo{
+	margin-top:10px;}	
+	
+.userdet2{
+	color:#F38630;}			
+
+		
+.midcontainer1{
+	background-color:#F7EAC8;
+	margin-top:90px;
+	border-radius:100px;
+	box-shadow: 0.125em 0.125em 0.9375em #000; 
+	-webkit-box-shadow: 0.125em 0.125em 0.9375em #000; 
+	-moz-box-shadow: 0.125em 0.125em 0.9375em #000; 
+	-ms-box-shadow: 0.125em 0.125em 0.9375em #000; 
+	-o-box-shadow: 0.125em 0.125em 0.9375em #000;}	
+	
+		
+.tabelform{
+	margin-top:30px;
+	padding:5px 5px 50px 1px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	width:100%;
+	}
+	
+.tabheading{
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	padding-top:15px;
+	padding-bottom:15px;
+	font-weight:bold;
+	font-size:25px;
+	}	
+	
+.tabsubheading{
+	font-family: 'latohairline';
+	/*font-family: "latohairline" ,"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-weight:bold;
+	font-size:16px;
+	border-style: solid;
+    border-width:1px;
+	border-color:#000;
+	border-top:none;
+	border-left:none;
+	border-right:none;}
+	
+.countertextbox{
+	color:#F38630;
+	font-size:10px bold;
+	border:none;
+	text-align:center;
+	width:20px;
+	border-radius:5px;
+}
+
+
+.submessage1{
+	padding-top:10px;
+	text-align:center;
+	color:#3C0;}
+	
+.submessage2{
+	padding-bottom:5px;
+	text-align:center;
+	color:#F30;}	
+
+.rowspacing{
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	padding:8px 0px 8px 55px;
+	font-size:15px;
+	font-weight:bold;
+	color:black;}
+
+.userinp{
+	padding:3px 3px 3px 10px;
+	width:80%;
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	font-weight:bold;
+	outline:none;
+	border-width: 1px;
+	transition: all 0.3s ease-out 0s; }
+
+.userinp:hover{
+box-shadow: 0.1em 0.1em 0.5em #F38630;
+border-style: solid;
+border-width: 1.2px;
+border-color:#F38630 }
+
+.userinp:focus{
+box-shadow: 0.1em 0.1em 0.5em #BCCF02;
+border-style: solid;
+border-width: 1.2px;
+border-color:#BCCF02}
+
+.regisbutton{
+	width:130px;
+	height:28px;
+	margin-right:15px;
+	margin-top:15px;
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	border-style: solid;
+    border-width:1px;
+	border-color:#F38630;
+    background-color:#F7EAC8;
+    color:#000;
+    font-weight:bold;
+    outline:none;
+	transition: all 0.3s ease-out 0s;}
+	
+.regisbutton:hover{	
+	background-color:#F38630;
+	color:white;
+	cursor:pointer;}
+	
+.resetbutton{
+	width:130px;
+	height:28px;
+	margin-right:15px;
+	margin-top:15px;
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	border-style: solid;
+    border-width:1px;
+	border-color:#F38630;
+    background-color:#F7EAC8;
+    color:#000;
+    font-weight:bold;
+    outline:none;
+	transition: all 0.3s ease-out 0s;}	
+
+.resetbutton:hover{
+	background-color:#F38630;
+	color:white;
+	cursor:pointer;}
+	
+.regisbutton:focus{
+	border-style:inset;
+    border-width:1px;
+	border-color: #FA6900;
+	background: linear-gradient(to top, #F38630, #FA6900);
+	background: -webkit-linear-gradient(to top, #F38630, #FA6900);
+    background: -o-linear-gradient(to top, #F38630, #FA6900);
+    background: -moz-linear-gradient(to top, #F38630, #FA6900); }
+	
+.resetbutton:focus{
+	border-style:inset;
+    border-width:1px;
+	border-color: #FA6900;
+	background: linear-gradient(to top, #F38630, #FA6900);
+	background: -webkit-linear-gradient(to top, #F38630, #FA6900);
+    background: -o-linear-gradient(to top, #F38630, #FA6900);
+    background: -moz-linear-gradient(to top, #F38630, #FA6900);}
+	
+.footer1{
+	margin-top:60px;
+	background-color:#000;
+	padding:11px 20px 11px 20px;
+	box-shadow: 0.125em 0.125em 0.5em #000; 
+	-webkit-box-shadow: 0.125em 0.125em 0.5em #000; 
+	-moz-box-shadow: 0.125em 0.125em 0.5em #000;
+	-ms-box-shadow: 0.125em 0.125em 0.5em #000;
+	-o-box-shadow: 0.125em 0.125em 0.5em #000;
+	font-family: 'open_sansregular';
+	/*font-family: opensasregular;*/
+	text-align:center;}		
+	
+.footer1 li{
+	padding:14px 20px 14px 20px;
+	font-size:13.8px;
+	color:#FFF;
+	font-weight:bold;
+	transition: all 0.3s ease-out 0s;}
+	
+.footer1 li:hover{
+	color:#FA6900;
+	font-size:14px;
+	font-weight:bold;
+	cursor:pointer;}
+	
+		
+@media screen and (min-width:  )and (max-width:  ){
+	
+	
+}
+		

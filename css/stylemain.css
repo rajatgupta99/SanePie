@@ -1,0 +1,3152 @@
+@charset "utf-8";
+
+
+viewport{width: device-width;}
+@-webkit-viewport{width: device-width;}
+@-moz-viewport{width: device-width;}
+@-ms-viewport{width: device-width;}
+@-o-viewport{width: device-width;}
+
+
+*{ margin:0; 
+   padding:0;
+   -webkit-font-smoothing: antialiased;
+   -moz-font-smoothing: antialised;
+   -ms-font-smoothing: antialised;
+   -0-font-smoothing: antialised;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border:box;
+   -o-box-sizing: border-box;  
+   }
+ 
+body{
+	-webkit-text-size-adjust:100%;
+	-moz-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	-o-text-size-adjust:100%;
+   font-smoothing: subpixel-antialiased;
+   -webkit-font-smoothing: subpixel-antialiased;
+   -moz-font-smoothing: subpixel-antialiased;
+   -ms-font-smoothing: subpixel-antialiased;
+   -o-font-smoothing: subpixel-antialiased;
+    font-smoothing: antialiased;
+    text-rendering:optimizeLegibility; 
+    -webkit-text-rendering:optimizeLegibility;
+   -moz-text-rendering:optimizeLegibility;
+   -ms-text-rendering:optimizeLegibility;
+   -o-text-rendering:optimizeLegibility;
+   -moz-osx-font-smoothing:grayscale;}
+
+body{font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+@font-face {
+    font-family: 'latohairline';
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot');
+    src: url('../fonts/latohairline/lato-hairline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff2') format('woff2'),
+         url('../fonts/latohairline/lato-hairline-webfont.woff') format('woff'),
+         url('../fonts/latohairline/lato-hairline-webfont.ttf') format('truetype'),
+         url('../fonts/latohairline/lato-hairline-webfont.svg#latohairline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot');
+    src: url('../fonts/opensansregular/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensansregular/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensansregular/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensansregular/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensanssemibold/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensanssemibold/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensanssemibold/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensanssemibold/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensanssemibold/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensanssemibold/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+/* @font-face{ 
+	 font-family: latohairline;
+	 src:url(../fonts/Lato-Hairline.ttf);}
+	 
+@-webkit-font-face{
+	 font-family: latohairline;
+	 src:url(../fonts/Lato-Hairline.ttf);}
+	 
+@-moz-font-face{
+	 font-family: latohairline;
+	 src:url(../fonts/Lato-Hairline.ttf);}
+	 
+@-ms-font-face{
+	 font-family: latohairline;
+	src:url(../fonts/Lato-Hairline.ttf);}
+	 
+@-o-font-face{
+	 font-family: latohairline;
+	 src:url(../fonts/Lato-Hairline.ttf);} */
+
+/*@font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}	 
+	 
+@-webkit-font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}
+	 	 
+@-moz-font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}
+	 
+@-ms-font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}
+	 
+@-o-font-face{
+	 font-family: opensasregular;
+	 src:url(../fonts/OpenSans-Regular.ttf);}*/
+	 
+/*@font-face{
+	 font-family: opensassemibold;
+	 src:url(../fonts/OpenSans-Semibold.ttf);} 
+	 
+@-webkit-font-face{
+	 font-family: opensassemibold;
+	 src:url(../fonts/OpenSans-Semibold.ttf);} 
+	 	 
+@-moz-font-face{
+	 font-family: opensassemibold;
+	 src:url(../fonts/OpenSans-Semibold.ttf);} 
+	 
+@-ms-font-face{
+	 font-family: opensassemibold;
+	 src:url(../fonts/OpenSans-Semibold.ttf);} 
+	 
+@-o-font-face{
+	font-family: opensassemibold;
+	 src:url(../fonts/OpenSans-Semibold.ttf);}*/ 	 
+	 	 
+.clr{clear:both;}
+
+.container {
+	width:100%;
+	margin: 0 auto;}
+	
+.container .columns{
+	float:left;}
+	
+.container .columns.one {width: 6.25%;}
+.container .columns.two {width: 12.5%;}
+.container .columns.three {width: 18.75%;}
+.container .columns.four {width: 25%;}
+.container .columns.five {width: 31.25%;}
+.container .columns.six {width: 37.5%;}
+.container .columns.seven {width: 43.75%;}
+.container .columns.eight {width: 50%;}
+.container .columns.nine {width: 56.25%;}
+.container .columns.ten {width: 62.5%;}
+.container .columns.eleven {width: 68.75%;}
+.container .columns.twelve {width: 75%;}
+.container .columns.thirteen {width: 81.25%;}
+.container .columns.fourteen {width: 87.5%;}
+.container .columns.fifteen {width: 93.75%;}
+.container .columns.sixteen {width: 100%;}
+
+.one-offset-left{margin-left:6.25%;}
+.two-offset-left{margin-left:12.5%;}
+.three-offset-left{margin-left:18.75%;}
+.four-offset-left{margin-left:25%;}
+.five-offset-left{margin-left:31.25%;}
+.six-offset-left{margin-left:37.5%;}
+.seven-offset-left{margin-left:43.75%;}
+.eight-offset-left{margin-left:50%;}
+.nine-offset-left{margin-left:56.25%;}
+.ten-offset-left{margin-left:62.5%;}
+.eleven-offset-left{margin-left:68.75%;}
+.twelve-offset-left{margin-left:75%;}
+.thirteen-offset-left{margin-left:81.25%;}
+.fourteen-offset-left{margin-left:87.5%;}
+.fifteen-offset-left{margin-left:93.75%;}
+.sixteen-offset-left{margin-left:100%;}
+
+.one-offset-right{margin-right:6.25%;}
+.two-offset-right{margin-right:12.5%;}
+.three-offset-right{margin-right:18.75%;}
+.four-offset-right{margin-right:25%;}
+.five-offset-right{margin-right:31.25%;}
+.six-offset-right{margin-right:37.5%;}
+.seven-offset-right{margin-right:43.75%;}
+.eight-offset-right{margin-right:50%;}
+.nine-offset-right{margin-right:56.25%;}
+.ten-offset-right{margin-right:62.5%;}
+.eleven-offset-right{margin-right:68.75%;}
+.twelve-offset-right{margin-right:75%;}
+.thirteen-offset-right{margin-right:81.25%;}
+.fourteen-offset-right{margin-right:87.5%;}
+.fifteen-offset-right{margin-right:93.75%;}
+.sixteen-offset-right{margin-right:100%;}
+
+.container:after{
+content:'';
+display:block;
+overflow: hidden;
+visibility: hidden;
+width:0;
+height:0;
+clear:both;}
+
+.container{zoom:1;}
+
+.clr{clear:both;}
+
+a{text-decoration:none;color:inherit;}
+
+
+.backgrd1{
+background-color:#F38630;
+box-shadow: 0.125em 0.125em 1.875em #333 inset;
+-webkit-box-shadow: 0.125em 0.125em 1.875em #333 inset;
+-moz-box-shadow: 0.125em 0.125em 1.875em #333 inset;
+-ms-box-shadow: 0.125em 0.125em 1.875em #333 inset;
+-o-box-shadow: 0.125em 0.125em 1.875em #333 inset;}
+
+.backgrd2{
+background-color:#000;
+margin:0 auto;
+box-shadow: 0.0625em 0.0625em 0.9375em #666;
+-webkit-box-shadow: 0.0625em 0.0625em 0.9375em #666;
+-moz-box-shadow: 0.0625em 0.0625em 0.9375em #666;
+-ms-box-shadow: 0.0625em 0.0625em 0.9375em #666;
+-o-box-shadow: 0.0625em 0.0625em 0.9375em #666;
+transition: all 0.3s ease-out 0s;}
+
+.backgrd2:hover{
+box-shadow: 0.0625em 0.0625em 0.9375em #69D2E7;
+-webkit-box-shadow: 0.0625em 0.0625em 0.9375em #69D2E7;
+-moz-box-shadow: 0.0625em 0.0625em 0.9375em #69D2E7;
+-ms-box-shadow: 0.0625em 0.0625em 0.9375em #69D2E7;
+-o-box-shadow: 0.0625em 0.0625em 0.9375em #69D2E7;}
+
+.topright{
+background-color: rgba(0, 0, 0, 0.2);
+-webkit-background-color: rgba(0, 0, 0, 0.2);
+-moz-background-color: rgba(0, 0, 0, 0.2);
+-ms-background-color: rgba(0, 0, 0, 0.2);
+-o-background-color: rgba(0, 0, 0, 0.2);
+color:white;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+cursor: pointer;
+float:right;
+padding:0.7em 1.3em;
+font-size:0.95em;
+text-shadow: 1px 1px 3px #000;
+-webkit-text-shadow: 1px 1px 3px #000;
+-moz-text-shadow: 1px 1px 3px #000;
+-ms-text-shadow: 1px 1px 3px #000;
+-o-text-shadow: 1px 1px 3px #000;
+text-decoration:none;
+}
+
+.topright:hover{
+text-decoration:underline;
+}
+
+.logoimg{
+  width:120px;
+  height:120px;	 
+}
+
+.logo1a{
+color:white;
+font-size:5em;	
+ font-family: 'latohairline';
+/*font-family: "latohairline" ,"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+text-align:center;
+margin-left:0.5em;
+cursor: pointer;
+text-shadow: 1px 1px 3px #000;
+-webkit-text-shadow: 1px 1px 3px #000;
+-moz-text-shadow: 1px 1px 3px #000;
+-ms-text-shadow: 1px 1px 3px #000;
+-o-text-shadow: 1px 1px 3px #000;
+}
+
+.logosane{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        
+}
+
+
+.logo1b{
+font-size:0.2em;
+color:#000;
+font-family: 'open_sansregular';
+/*font-family: "opensasregular","Helvetica Neue", Helvetica, Arial, sans-serif;*/
+text-shadow:none;
+}
+
+
+.logo2{
+font-size:1.375em; 
+color:white; 
+margin-top:0.6em;
+font-family: Arial Narrow,Arial,sans-serif; 
+font-weight:lighter;
+text-align:center;
+padding:0 0 1.5em 0;	
+text-shadow: 1px 1px 3px #000;
+-webkit-text-shadow: 1px 1px 3px #000;
+-moz-text-shadow: 1px 1px 3px #000;
+-ms-text-shadow: 1px 1px 3px #000;
+-o-text-shadow: 1px 1px 3px #000;
+}
+
+
+.searchmenu {
+	width: 65%;	
+	font-size:1.05em;
+	outline: none;
+	padding: 0.33em 0.875em 0.28em 0.875em;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	outline:none;
+	border:none;
+	transition: all 0.3s ease-out 0s;}
+		
+	
+::-webkit-input-placeholder {color:#666;}
+
+:-moz-placeholder {color:#666;}
+
+::-moz-placeholder {color:#666;}
+
+:-ms-input-placeholder {color:#666;}	
+
+input, select, textarea{
+	color:#000;
+	}
+	
+textarea:focus, input:focus {
+    color:#000;
+	border:1px soild #060;
+	box-shadow: 0.125em 0.125em 0.9375em #69D2E7; 
+	-webkit-box-shadow: 0.125em 0.125em 0.9375em #69D2E7; 
+	-moz-box-shadow: 0.125em 0.125em 0.9375em #69D2E7; 
+	-ms-box-shadow: 0.125em 0.125em 0.9375em #69D2E7; 
+	-o-box-shadow: 0.125em 0.125em 0.9375em #69D2E7; 
+}
+
+
+input {
+    -webkit-appearance: none;
+     border-radius: 0;
+}
+
+.help{
+    border-width: 0.0625em;
+	border-top:none;
+	border-right:none;
+    border-left:none;
+	padding-left:0.625em;
+	padding-top:0.55em;
+	text-align:center;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size:0.92em;
+	color:#A3A3A3;
+
+}	
+
+.maincont{
+ padding:0.4em 0.375em 3em 0.375em;}
+
+.maincont a:visited{color:#F38630;}
+
+.maincont-mid{
+	text-align:center;	
+}
+
+.tabadjust{ text-align:center;}
+
+.resultadjust{
+   padding-top:100px;
+   padding-bottom:50px;}
+	
+.executime{
+	color:#A3A3A3;
+	font-size:12px;}
+	
+.wikires{
+	 font-family: 'open_sansregular';
+	/*font-family: "opensasregular" ,"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-size:17.5px;	
+}
+	
+.wikireslink{
+	 font-family: 'open_sansregular';
+	/*font-family: "opensasregular" ,"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	color:#440e62;
+	margin-left:10px;
+	font-weight:bold;	
+	font-size:17.4px;
+	transition: all 0.2s ease-out 0s;
+}
+
+.dashsep{color:black;}
+
+.wikireslink:hover{
+	text-decoration:underline;
+	font-size:17.95px;
+	cursor:pointer;
+}
+	
+.serresults{
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color:#999;
+	margin-left:10px;
+	font-size:19.35px;	
+	transition: all 0.2s ease-out 0s;
+}
+
+.serresults:hover{
+	text-decoration:underline;
+	font-size:19.9px;
+	color:#440e62;
+	cursor:pointer;
+}
+
+.seperatorlinks{color:#440e62;}
+
+.notfoundmsg{
+	color:#999;
+}
+	
+.footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    background-color:white;
+	color:#666;
+	padding:0.4% 1% 0.4% 1%;
+	box-shadow: 0.055em 0.055em 0.55em #F38630;
+	-webkit-box-shadow: 0.055em 0.055em 0.55em #F38630;
+	-moz-box-shadow: 0.055em 0.055em 0.55em #F38630;
+	-ms-box-shadow: 0.055em 0.055em 0.55em #F38630;
+	-o-box-shadow: 0.055em 0.055em 0.55em #F38630;
+}
+
+
+
+
+ul li{
+	display:inline;
+	list-style:none;
+}
+
+.footerli{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/*font-family: "opensassemibold","Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	text-align:center;
+	font-size:0.9em;	
+}
+
+.footerli li{
+padding:0.7% 1.2% 0.5% 1.2%;	
+transition: all 0.3s ease-out 0s;
+-webkit-transition: all 0.3s ease-out 0s; 
+	-moz-transition: all 0.3s ease-out 0s; 
+	-o-transition: all 0.3s ease-out 0s; 
+	-ms-transition: all 0.3s ease-out 0s; 
+	
+}
+
+.footerli li:hover{
+color:#F38630;
+font-size:1em;
+box-shadow: 0.0625em 0.0625em 0.9375em #F38630;
+-webkit-box-shadow: 0.0625em 0.0625em 0.9375em #F38630;
+-moz-box-shadow: 0.0625em 0.0625em 0.9375em #F38630;
+-ms-box-shadow: 0.0625em 0.0625em 0.9375em #F38630;
+-o-box-shadow: 0.0625em 0.0625em 0.9375em #F38630;
+}
+
+
+
+/* ------------------------------ Device Specific Media Queries --------------------------- */
+
+/* ---------------------------- Tablets ------------------------------ */
+
+/* ------ iPad mini, iPad 1 & 2  -------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	  
+.topright {
+   font-size: 1em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 130px;
+    height: 130px;
+    margin-top: 30px;
+}
+
+.logo1a {
+font-size: 5em;
+padding-top: 10px;
+}
+
+.logo2 {
+font-size: 1.3em;
+margin-top: 0.9em;
+padding: 0px 0px 2.1em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1.1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.88em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.8em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape)  
+  and (-webkit-min-device-pixel-ratio: 1) {
+	  
+.topright {
+   font-size: 1em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 130px;
+    height: 130px;
+    margin-top: 25px;
+}
+
+.logo1a {
+font-size: 5em;
+padding-top: 2px;
+}
+
+.logo2 {
+font-size: 1.3em;
+margin-top: 0.4em;
+padding: 0px 0px 1.5em;
+text-shadow:none;
+
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1.1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.92em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.8em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}	  
+	
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	  
+.topright {
+   font-size: 1em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 130px;
+    height: 130px;
+    margin-top: 30px;
+}
+
+.logo1a {
+font-size: 5em;
+padding-top: 10px;
+}
+
+.logo2 {
+font-size: 1.3em;
+margin-top: 0.9em;
+padding: 0px 0px 2.1em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1.1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.88em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.8em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+.topright {
+   font-size: 1em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 130px;
+    height: 130px;
+    margin-top: 25px;
+}
+
+.logo1a {
+font-size: 5em;
+padding-top: 2px;
+}
+
+.logo2 {
+font-size: 1.3em;
+margin-top: 0.4em;
+padding: 0px 0px 1.5em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1.1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.92em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.8em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}	  
+}
+
+
+/* ----------- Galaxy Tab 10.1 ----------- */
+
+/* Portrait */
+@media only screen
+  and (device-width: 800px)
+  and (device-height: 1280px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) 
+ { 
+
+.topright {
+   font-size: 1em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 140px;
+    height: 140px;
+    margin-top: 35px;
+}
+
+.logo1a {
+font-size: 5.5em;
+padding-top: 10px;
+}
+
+.logo2 {
+font-size: 1.4em;
+margin-top: 0.9em;
+padding: 0px 0px 2.3em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1.1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.88em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.85em;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}
+}
+
+/* Landscape */
+@media only screen
+  and (device-width: 800px)
+  and (device-width: 1280px) 
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+.topright {
+   font-size: 1em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 130px;
+    height: 130px;
+    margin-top: 25px;
+}
+
+.logo1a {
+font-size: 5em;
+padding-top: 2px;
+}
+
+.logo2 {
+font-size: 1.3em;
+margin-top: 0.4em;
+padding: 0px 0px 1.5em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1.1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 1em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.9em;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}	  
+}
+
+
+/* ------------- Nexus Tablets -------------- */
+
+/* ----- Asus Nexus 7 ------- */
+
+/* Portrait */
+@media screen 
+  and (min-device-width: 601px) 
+  and (max-device-width: 906px) 
+  and (-webkit-min-device-pixel-ratio: 1.331) 
+  and (-webkit-max-device-pixel-ratio: 1.332) 
+  and (orientation: portrait) {
+
+.topright {
+   font-size: 1em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 130px;
+    height: 130px;
+    margin-top: 30px;
+}
+
+.logo1a {
+font-size: 5em;
+padding-top: 10px;
+}
+
+.logo2 {
+font-size: 1.3em;
+margin-top: 0.9em;
+padding: 0px 0px 1.8em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1.1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.8em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.78em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}
+}
+
+
+/* Landscape */
+@media screen 
+  and (min-device-width: 601px) 
+  and (max-device-width: 906px) 
+  and (-webkit-min-device-pixel-ratio: 1.331) 
+  and (-webkit-max-device-pixel-ratio: 1.332) 
+  and (orientation: landscape) {
+.topright {
+   font-size: 0.8em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 115px;
+    height: 115px;
+    margin-top: 15px;
+}
+
+.logo1a {
+font-size: 4.5em;
+padding-top: 0.5px;
+}
+
+.logo2 {
+font-size: 1.2em;
+margin-top: 0.1em;
+padding: 0px 0px 1em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.9em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.79em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}	  
+}
+
+
+
+/* --------------- Kindle Fire --------------- */
+
+/* ------- Kindle Fire HD 7" ------- */
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1280px)  
+   and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation: portrait) {
+	  
+.topright {
+   font-size: 1em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 140px;
+    height: 140px;
+    margin-top: 35px;
+}
+
+.logo1a {
+font-size: 5.5em;
+padding-top: 10px;
+}
+
+.logo2 {
+font-size: 1.4em;
+margin-top: 0.9em;
+padding: 0px 0px 2.3em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1.1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.88em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.85em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}
+}
+	  
+	  
+/* Landscape */
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) 
+  and (orientation: landscape) {
+
+.topright {
+   font-size: 1em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 130px;
+    height: 130px;
+    margin-top: 25px;
+}
+
+.logo1a {
+font-size: 5em;
+padding-top: 2px;
+}
+
+.logo2 {
+font-size: 1.3em;
+margin-top: 0.4em;
+padding: 0px 0px 1.5em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1.1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 1em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.9em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}	  
+
+}
+
+
+/* ------ Kindle Fire HD 8.9" -------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation: portrait) {
+
+.topright {
+   font-size: 1.3em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 170px;
+    height: 170px;
+    margin-top: 35px;
+}
+
+.logo1a {
+font-size: 7em;
+padding-top: 15px;
+}
+
+.logo2 {
+font-size: 1.8em;
+margin-top: 0.6em;
+padding: 0px 0px 2em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 88%;
+font-size: 1.4em;
+padding-left:25px;
+}
+
+.help {
+font-size: 1.2em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 1.3em;
+
+}
+
+.footerli li {
+    padding: 2px 12px;}
+
+
+.footerli li:hover{box-shadow:none;}	  
+
+}
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px)  
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation: landscape) {
+
+.topright {
+   font-size: 1.3em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 170px;
+    height: 170px;
+    margin-top: 35px;
+}
+
+.logo1a {
+font-size: 7em;
+padding-top: 15px;
+}
+
+.logo2 {
+font-size: 1.8em;
+margin-top: 0.6em;
+padding: 0px 0px 2em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 88%;
+font-size: 1.4em;
+padding-left:25px;
+}
+
+.help {
+font-size: 1.2em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 1.3em;
+
+}
+
+
+.footerli li {
+    padding: 2px 12px;}
+
+
+.footerli li:hover{box-shadow:none;}	  
+
+}
+
+
+/* ----------- Blackberry Playbook ------------- */
+@media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 600px){
+	  
+.topright {
+   font-size: 0.85em;
+}	  
+
+.backgrd1{
+box-shadow: 0.7px 0.7px 10px #333 inset;
+}
+	  
+	  
+.logoimg {
+    width: 120px;
+    height: 120px;
+    margin-top: 25px;
+}
+
+.logo1a {
+font-size: 4.7em;
+padding-top: 0px;
+}
+
+.logo2 {
+font-size: 1.1em;
+margin-top: 0.1em;
+padding: 0px 0px 1em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 85%;
+font-size: 1em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.8em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.7px 0.7px 5px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.77em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 8px;}
+
+
+.footerli li:hover{box-shadow:none;}
+	  	  
+}
+
+
+
+/* --------------------- Mobile Phones --------------------- */
+
+/* ------------------ Apple -------------------- */
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	  
+.topright{
+	font-size: 0.58em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:8px;
+  width:65px;
+  height:65px;	 
+}
+
+.logo1a {
+	font-size: 3.5em;
+	margin-top:-6px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.9em;
+	margin-top: 0.3em;
+	padding: 0px 0px 1em;	
+        text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 93%;
+	font-size: 1.1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.55em;
+	padding-top: 4px;
+        
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.63em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 2px;}
+
+.footerli li:hover{box-shadow:none;}		  
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+.topright{
+	font-size: 0.58em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:65px;
+  height:65px;	 
+}
+
+.logo1a {
+	font-size: 3em;
+	margin-top:-10px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.79em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 90%;
+	font-size: 1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.54em;
+	padding-top: 4px;
+    
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.63em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 4px;}
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+
+/* -------- iPhone 5,5S & Galaxy S3 ------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+	  
+.topright{
+	font-size: 0.58em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:68px;
+  height:68px;	 
+}
+
+.logo1a {
+	font-size: 3.4em;
+	margin-top:-8px;        
+}
+
+.logo2 {
+	font-size: 0.9em;
+	margin-top: 0.3em;
+	padding: 0px 0px 1.5em;	
+        text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 93%;
+	font-size: 1.1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.55em;
+	padding-top: 4px;
+        
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.6em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 2px;}
+
+.footerli li:hover{box-shadow:none;}	
+
+}
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+.topright{
+	font-size: 0.58em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:65px;
+  height:65px;	 
+}
+
+.logo1a {
+	font-size: 3em;
+	margin-top:-10px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.79em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 90%;
+	font-size: 1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.54em;
+	padding-top: 4px;
+        
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.6em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 4px;}
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) { 
+.topright {
+   font-size: 0.69em;
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.logoimg{
+  margin-top:15px;
+  width:88px;
+  height:88px;	 
+}
+
+.logo1a {
+font-size: 3.8em;
+padding-top: 1px;
+
+}
+
+
+.logo2 {
+font-size: 1.2em;
+margin-top: 0.8em;
+padding: 0px 0px 1.2em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 90%;
+font-size: 1.2em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.65em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.5px 0.5px 2px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.68em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 3px;}
+
+
+.footerli li:hover{box-shadow:none;}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+.topright{
+	font-size: 0.65em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:75px;
+  height:75px;	 
+}
+
+.logo1a {
+	font-size: 3.5em;
+	margin-top:-8px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.85em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 90%;
+	font-size: 0.89em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.6em;
+	padding-top: 4px;
+       
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.65em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 5px;}
+
+.footerli li:hover{box-shadow:none;}
+}
+
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+.topright {
+   font-size: 0.72em;
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.logoimg{
+  margin-top:15px;
+  width:100px;
+  height:100px;	 
+}
+
+.logo1a {
+font-size: 4em;
+padding-top: 1px;
+
+}
+
+
+.logo2 {
+font-size: 1.2em;
+margin-top: 0.8em;
+padding: 0px 0px 1.2em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 90%;
+font-size: 1.2em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.65em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.5px 0.5px 2px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.68em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 3px;}
+
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+.topright{
+	font-size: 0.7em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:85px;
+  height:85px;	 
+}
+
+.logo1a {
+	font-size: 3.8em;
+	margin-top:-8px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.9em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+     width: 90%;
+	 font-size: 0.9em;
+     padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.68em;
+	padding-top: 4px;
+    
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.67em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 6px;}
+
+.footerli li:hover{box-shadow:none;}
+}
+
+
+/* ---------------- Galaxy Phones ------------------ */
+
+
+
+
+/* --------- Galaxy S4 & HTC One --------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+.topright{
+	font-size: 0.62em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:20px;
+  width:75px;
+  height:75px;	 
+}
+
+.logo1a {
+	font-size: 3.6em;
+	margin-top:3px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 1em;
+	margin-top: 0.6em;
+	padding: 0px 0px 2em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 93%;
+	font-size: 1.1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.57em;
+	padding: 5px 1px 0px 1px;	
+}
+
+
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.638em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 4px 2px;}
+
+.footerli li:hover{box-shadow:none;}	
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+.topright{
+	font-size: 0.67em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:2px;
+  width:65px;
+  height:65px;	 
+}
+
+.logo1a {
+	font-size: 2.8em;
+	margin-top:-5px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.79em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 90%;
+	font-size: 0.9em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.57em;
+	padding-top: 4px;
+        
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.64em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 4px;}
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+/*----------- Nexus4 and LG Optimus L70 ----------- */
+
+/* Portrait */
+@media only screen 
+     and (min-device-width: 384px)
+	 and (max-device-width: 640px) 
+	 and (orientation: portrait)  {
+		 
+.topright {
+   font-size: 0.715em;
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.logoimg{
+  margin-top:8px;
+  width:90px;
+  height:90px;	 
+}
+
+.logo1a {
+font-size: 3.9em;
+padding-top: 1px;
+
+}
+
+
+.logo2 {
+font-size: 1.05em;
+margin-top: 0.8em;
+padding: 0px 0px 2em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 90%;
+font-size: 1.2em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.7em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.5px 0.5px 2px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.74em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 4px;}
+
+
+.footerli li:hover{box-shadow:none;}
+}
+
+
+/* Landscape */
+@media only screen 
+     and (min-device-width: 384px)
+	 and (max-device-width: 640px) 
+	 and (orientation: landscape) {
+		 
+.topright{
+	font-size: 0.69em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:2px;
+  width:68px;
+  height:68px;	 
+}
+
+.logo1a {
+	font-size: 3em;
+	margin-top:-5px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.84em;
+	margin-top: 0em;
+	padding: 0px 0px 1.5em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 90%;
+	font-size: 0.9em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.59em;
+	padding-top: 4px;
+       
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.66em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 4px;}
+
+.footerli li:hover{box-shadow:none;}
+		 
+}
+
+
+/* ----------- Galaxy S5, Note3, Note2, Blackberry Z3, Nexus 5, Nokia N9  ----------- */
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 360px) 
+  and (max-device-height: 640px) 
+  and (orientation: portrait) {
+
+.topright {
+   font-size: 0.65em;
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.logoimg{
+  margin-top:8px;
+  width:88px;
+  height:88px;	 
+}
+
+.logo1a {
+font-size: 3.6em;
+padding-top: 1px;
+}
+
+
+.logo2 {
+font-size: 1em;
+margin-top: 0.8em;
+padding: 0px 0px 2em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 90%;
+font-size: 1.2em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.65em;
+padding: 5px 1px 0px 1px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.2em 0.2em;
+box-shadow: 0.5px 0.5px 2px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.64em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 3px 3px;}
+
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-height: 640px) 
+  and (orientation: landscape) {
+
+.topright{
+	font-size: 0.65em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:2px;
+  width:62px;
+  height:62px;	 
+}
+
+.logo1a {
+	font-size: 2.6em;
+	margin-top:-5px;
+        
+}
+
+.logo2 {
+	font-size: 0.88em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 90%;
+	font-size: 0.9em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.60em;
+	padding-top: 4px;
+        
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.67em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 4px;}
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+ 
+/* ----------- Test  ------------------------------------------------------------------------------ */ 
+
+/* ----------- Galaxy S Duos  ----------- */
+  
+@media only screen 
+         and (min-width:200px)
+		 and (max-width:318px)
+		 and (orientation: portrait){
+.topright{
+	font-size: 0.58em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:8px;
+  width:65px;
+  height:65px;	 
+}
+
+.logo1a {
+	font-size: 3.5em;
+	margin-top:-6px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.9em;
+	margin-top: 0.3em;
+	padding: 0px 0px 1.5em;	
+        text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 93%;
+	font-size: 1.1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.55em;
+	padding-top: 4px;
+        color:#666;
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.63em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 2px;}
+
+.footerli li:hover{box-shadow:none;}	
+	
+}
+
+
+
+/* --------------------- Mobile Phones --------------------- */
+
+/* ------------------ Apple -------------------- */
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
+	  
+.topright{
+	font-size: 0.58em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:8px;
+  width:65px;
+  height:65px;	 
+}
+
+.logo1a {
+	font-size: 3.5em;
+	margin-top:-6px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.9em;
+	margin-top: 0.3em;
+	padding: 0px 0px 1em;	
+        text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 93%;
+	font-size: 1.1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.55em;
+	padding-top: 4px;
+        
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.63em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 2px;}
+
+.footerli li:hover{box-shadow:none;}		  
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: landscape) {
+
+.topright{
+	font-size: 0.58em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:65px;
+  height:65px;	 
+}
+
+.logo1a {
+	font-size: 3em;
+	margin-top:-10px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.79em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 90%;
+	font-size: 1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.54em;
+	padding-top: 4px;
+    
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.63em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 4px;}
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+
+/* -------- iPhone 5,5S & Galaxy S3, S4 & HTC One ------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (orientation: portrait) {
+	  
+.topright{
+	font-size: 0.58em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:68px;
+  height:68px;	 
+}
+
+.logo1a {
+	font-size: 3.4em;
+	margin-top:-8px;        
+}
+
+.logo2 {
+	font-size: 0.9em;
+	margin-top: 0.3em;
+	padding: 0px 0px 1.5em;	
+        text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 93%;
+	font-size: 1.1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.55em;
+	padding-top: 4px;
+        
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.6em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 2px;}
+
+.footerli li:hover{box-shadow:none;}	
+
+}
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (orientation: landscape) {
+.topright{
+	font-size: 0.58em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:65px;
+  height:65px;	 
+}
+
+.logo1a {
+	font-size: 3em;
+	margin-top:-10px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.79em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 90%;
+	font-size: 1em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.54em;
+	padding-top: 4px;
+        
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.6em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 4px;}
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)  
+  and (orientation: portrait) { 
+.topright {
+   font-size: 0.69em;
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.logoimg{
+  margin-top:15px;
+  width:88px;
+  height:88px;	 
+}
+
+.logo1a {
+font-size: 3.8em;
+padding-top: 1px;
+
+}
+
+
+.logo2 {
+font-size: 1.2em;
+margin-top: 0.8em;
+padding: 0px 0px 1.2em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 90%;
+font-size: 1.2em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.65em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.5px 0.5px 2px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.68em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 3px;}
+
+
+.footerli li:hover{box-shadow:none;}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (orientation: landscape) { 
+.topright{
+	font-size: 0.65em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:75px;
+  height:75px;	 
+}
+
+.logo1a {
+	font-size: 3.5em;
+	margin-top:-8px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.85em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+        width: 90%;
+	font-size: 0.89em;
+        padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.6em;
+	padding-top: 4px;
+       
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.65em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 5px;}
+
+.footerli li:hover{box-shadow:none;}
+}
+
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) { 
+.topright {
+   font-size: 0.72em;
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.logoimg{
+  margin-top:15px;
+  width:100px;
+  height:100px;	 
+}
+
+.logo1a {
+font-size: 4em;
+padding-top: 1px;
+
+}
+
+
+.logo2 {
+font-size: 1.2em;
+margin-top: 0.8em;
+padding: 0px 0px 1.2em;
+text-shadow:none;
+}
+
+.searchmenu {
+width: 90%;
+font-size: 1.2em;
+padding-left:25px;
+}
+
+.help {
+font-size: 0.65em;
+padding-top: 5px;
+
+}
+
+.maincont {
+padding: 1.25em 0.375em 2em;
+
+}
+
+.footer {
+padding: 0.4em 0.2em;
+box-shadow: 0.5px 0.5px 2px #F38630;
+}
+
+.footerli {
+color: #666;
+font-size: 0.68em;
+font-weight:bold;
+}
+
+.footerli li {
+    padding: 2px 3px;}
+
+
+.footerli li:hover{box-shadow:none;}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (orientation: landscape) { 
+.topright{
+	font-size: 0.7em;	      
+}
+
+.backgrd1{
+box-shadow: 0.5px 0.5px 8px #333 inset;
+}
+
+.backgrd2{
+box-shadow: 0.5px 0.5px 10px #666;
+}
+
+.logoimg{
+  margin-top:4px;
+  width:85px;
+  height:85px;	 
+}
+
+.logo1a {
+	font-size: 3.8em;
+	margin-top:-8px;
+        
+}
+
+
+
+.logo2 {
+	font-size: 0.9em;
+	margin-top: 0em;
+	padding: 0px 0px 1em;	
+    text-shadow:none;
+       
+}
+
+.searchmenu {
+     width: 90%;
+	 font-size: 0.9em;
+     padding-left:25px;
+        
+}
+
+.help {
+	font-size: 0.68em;
+	padding-top: 4px;
+    
+
+	
+}
+.maincont {
+    padding: 1.25em 0.375em 2em;}
+
+.footer {
+padding: 0.3em 0.1em;
+box-shadow: 0.5px 0.5px 2px #F38630;		
+}
+
+.footerli {
+color:#666;
+font-size: 0.67em;
+font-weight:bold;	
+}
+
+.footerli li {
+    padding: 2px 6px;}
+
+.footerli li:hover{box-shadow:none;}
+}
+
+
+/* ---------------- Galaxy Phones ------------------ */
+
+
+
+
+/* --------- Galaxy S4 & HTC One --------- */
+

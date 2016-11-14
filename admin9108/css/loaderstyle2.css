@@ -1,0 +1,41 @@
+*{padding:0;margin:0;}
+
+
+.loader1 {
+	width: 250px;
+	height:190px;
+    margin-top:20px;
+	
+}
+
+.text1
+{
+	text-align:center;
+	font-size:16px;
+	color:#F38630;
+	font-weight:bold;
+	margin-top:250px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	
+}
+
+.text2
+{
+	margin-top:10px;
+	text-align:center;
+	font-size:16px;
+	color:#F38630;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	
+}
+
+
+.mainbox {
+	
+	width:100%;
+	height:500px;
+	background-color:#FFF;
+	margin-top:60px;	
+}
+	
+	
